@@ -40,11 +40,13 @@ email:  dtarb@usu.edu
 
 #include <mpi.h>
 #include <queue>
+#include <stack>
 #include "commonLib.h"
 #include "linearpart.h"
 #include "createpart.h"
 #include "tiffIO.h"
-#include <stack>
+#include "flood.h"
+
 using namespace std;
 
 int flood( char* demfile, char* felfile, char *sfdrfile, int usesfdr, bool verbose, 
